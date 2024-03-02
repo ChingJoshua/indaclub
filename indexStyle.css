@@ -35,4 +35,7 @@ body {
 
 .btn btn-outline-primary {
     font-family: "Kufam", sans-serif;
+    width: 309px;
+    height: 104px;
+    flex-shrink: 0;
 }
