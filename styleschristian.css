@@ -1,0 +1,22 @@
+
+.signUp {
+    text-align: center;
+    color: white;
+}
+.login {
+    text-align: center;
+    color: white;
+}
+
+
+.loginButton{
+    border-radius: 205px;
+    color: white;
+    background: none;
+    border-color: white;
+    border-width: 2px;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
