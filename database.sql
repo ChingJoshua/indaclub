@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`studygroup` (
   `SGID` INT NOT NULL,
   `SGName` VARCHAR(50) NOT NULL,
   `SGWeekDay` VARCHAR(50) NOT NULL,
-  `SGTime` VARCHAR(50) NOT NULL,
+  `SGTime` Time(6) NOT NULL,
   `SGLocation` VARCHAR(50) NOT NULL,
   `OwnerID` INT NOT NULL,
   `course_CourseID` INT NOT NULL,
