@@ -1,0 +1,60 @@
+
+body {
+    background: #8F001A;
+}
+
+.loginLogo {
+    width: 187px;
+    height: 142px;
+    flex-shrink: 0;
+    margin-top: 100px;
+}
+
+.landingHeading {
+    font-family: "Markazi Text", serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: white;
+    text-align: center;
+    margin: 0px;
+
+}
+
+.landingText {
+    color: #FFF;
+    font-family: "Kufam", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login{
+    border-radius: 205px;
+    color: rgb(0, 0, 0);
+    background: white;
+    border-color: white;
+    border-width: 2px;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.signup{
+    border-radius: 205px;
+    color: white;
+    background: rgb(67, 66, 66);
+    border-color: white;
+    border-width: 2px;
+    font-size: 25px;
+    padding-left: 31px;
+    padding-right: 31px;
+    text-align: center;
+    font-weight: bold;
+}
+
