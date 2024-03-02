@@ -31,3 +31,7 @@ body {
     text-align: center;
     margin-top: 20px;
 }
+
+.btn btn-outline-primary {
+    font-family: "Kufam", sans-serif;
+}
