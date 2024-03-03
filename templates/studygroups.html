@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Study Groups</title>
+    <style>
+        .header-nav {
+            margin-bottom: 20px;
+        }
+        .header-nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-nav">
+    <a href="/studygroups/all">Feed</a>
+    <a th:href="@{/students/{id}(id=${session.userId})}">Profile</a>
+    <a href="/studygroups/new">Create Groups</a>
+    <!-- Sign Out Button -->
+    <form action="/signout" method="post" style="display: inline;">
+        <input type="submit" value="Sign Out" />
+    </form>
+</div>
+
+    <h2>Study Groups</h2>
+    <p>Enter your Student ID in the box and click Join on the study group you wish to join.</p>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Week Day</th>
+            <th>Time</th>
+            <th>Location</th> 
+            <th>Owner</th>         
+        </tr>
+        <tr th:each="studyGroup : ${studyGroups}">
+            <td th:text="${studyGroup.id}"></td>
+            <td th:text="${studyGroup.name}"></td>
+            <td th:text="${studyGroup.weekDay}"></td>
+            <td th:text="${studyGroup.time}"></td>
+            <td th:text="${studyGroup.location}"></td>
+            <td th:text="${studyGroup.owner.name}"></td>
+ <td>
+                <!-- View Details Link -->
+                <a th:href="@{/studygroups/view/{id}(id=${studyGroup.id})}" class="view-details">View Details</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

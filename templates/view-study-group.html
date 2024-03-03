@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>View Study Group</title>
+</head>
+<body>
+	<div class="header-nav">
+		<a href="/studygroups/all">Feed</a> <a
+			th:href="@{/students/{id}(id=${session.userId})}">Profile</a> <a
+			href="/studygroups/new">Create Groups</a>
+		<!-- Sign Out Button -->
+		<form action="/signout" method="post" style="display: inline;">
+			<input type="submit" value="Sign Out" />
+		</form>
+	</div>
+	<h2>Study Group Details</h2>
+	<p>
+		ID: <span th:text="${studyGroup.id}"></span>
+	</p>
+	<p>
+		Name: <span th:text="${studyGroup.name}"></span>
+	</p>
+	<p>
+		Week Day: <span th:text="${studyGroup.weekDay}"></span>
+	</p>
+	<p>
+		Time: <span th:text="${studyGroup.time}"></span>
+	</p>
+	<p>
+		Location: <span th:text="${studyGroup.location}"></span>
+	</p>
+	<p>
+		Owner: <span th:text="${studyGroup.owner.name}"></span> (<span
+			th:text="${studyGroup.owner.email}"></span>)
+	</p>
+
+	<h3>Members</h3>
+	<ul>
+		<li th:each="member : ${studyGroup.members}" th:text="${member.name}"></li>
+	</ul>
+	<div
+		th:unless="${session.userId == studyGroup.owner.id or #lists.contains(studyGroup.members, session.userId)}">
+		<form th:action="@{/studygroups/join/{id}(id=${studyGroup.id})}"
+			method="post">
+			<input type="submit" value="Join Group" />
+		</form>
+	</div>
+	<div th:if="${session.userId == studyGroup.owner.id}">
+		<form th:action="@{/studygroups/delete/{id}(id=${studyGroup.id})}"
+			method="post">
+			<input type="submit" value="Delete Group" />
+		</form>
+	</div>
+	<div th:if="${session.userId != studyGroup.owner.id and #lists.contains(studyGroup.members.![id], session.userId)}">
+    <form th:action="@{/studygroups/leave/{id}(id=${studyGroup.id})}" method="post">
+        <input type="submit" value="Leave Group" />
+    </form>
+</div>
+
+
+</body>
+</html>

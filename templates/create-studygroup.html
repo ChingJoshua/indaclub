@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create a New Study Group</title>
+    <style>
+        .header-nav {
+            margin-bottom: 20px;
+        }
+        .header-nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-nav">
+    <a href="/studygroups/all">Feed</a>
+    <a th:href="@{/students/{id}(id=${session.userId})}">Profile</a>
+    <a href="/studygroups/new">Create Groups</a>
+    <!-- Sign Out Button -->
+    <form action="/signout" method="post" style="display: inline;">
+        <input type="submit" value="Sign Out" />
+    </form>
+</div>
+
+    <h1>Create a New Study Group</h1>
+    <form th:action="@{/studygroups}" th:object="${studyGroup}" method="post">
+        <p>Name: <input type="text" th:field="*{name}" /></p>
+        <p>Week Day: <input type="text" th:field="*{weekDay}" /></p>
+        <p>Time: <input type="text" th:field="*{time}" /></p>
+        <p>Location: <input type="text" th:field="*{location}" /></p>
+        <!-- Removed Course ID and Owner ID inputs -->
+        <p><input type="submit" value="Create" /></p>
+    </form>
+</body>
+</html>
