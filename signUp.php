@@ -31,10 +31,9 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 } 
 
-$name =  $_REQUEST['firstname'].=$_REQUEST['lastname'];
-$email = $_REQUEST['email'];
-$password = $_REQUEST['password'];
-
+$name =  $_REQUEST["firstname"].=$_REQUEST["lastname"];
+$email = $_REQUEST["email"];
+$password = $_REQUEST["password"];
 $sql = "INSERT INTO student (STUDENT_EMAIL, STUDENT_NAME, STUDENT_PASSWORD) 
 VALUES ('$email', '$name', '$password')";
 
@@ -60,7 +59,7 @@ mysqli_close($conn);
             <label for="pwd">Enter Your Password:</label><br>
             <input type="password" id="pwd" name="password" style="border-radius: 10px; width: 250px; height: 40px; border: 1px solid white; background: none; color: white;"><br>
         </form>
-        <div style="display: flex; justify-content: center; margin: 0px; padding: 0px;margin-top: 30px;"><a href="signUp.php" style="text-decoration: none; color: white"><button type="button" class="btn btn-secondary btn-lg signup" href="#">Sign Up</button></a></div>
+        <div style="display: flex; justify-content: center; margin: 0px; padding: 0px;margin-top: 30px;"><a href="starterpage.php" style="text-decoration: none; color: white"><button type="button" class="btn btn-secondary btn-lg signup" href="#">Sign Up</button></a></div>
 
             
 
