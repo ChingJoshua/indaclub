@@ -159,3 +159,27 @@ body{
   margin-right: 16px;
   font-size: 17px;
 }
+
+.update {
+  border-radius: 250px;
+  color: black;
+  background: rgb(255, 255, 255);
+  border-color: #8F001A;
+  border-width: 5px;
+  font-size: 10px;
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-top:4px;
+  padding-bottom:6px;
+  font-weight: bold;
+  
+}
+
+footer {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom:0.5px;
+  background-color: #8F001A;
+  color: white;
+}
