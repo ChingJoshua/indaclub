@@ -82,7 +82,7 @@ body{
 
  .content-area{
   font-size: 25px;
-  color: #8F001A;
+  color: black;
  }
 
 
@@ -109,20 +109,25 @@ body{
     font-size: 25px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top:3px;
     text-align: center;
+    padding-bottom:6px;
     font-weight: bold;
 
   }
 
   .activegroups {
-    border-radius: 205px;
-    color: black;
-    background: white;
+    border-radius: 250px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     border-color: white;
     border-width: 3px;
     font-size: 25px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top:3px;
+    padding-bottom:6px;
     text-align: center;
     font-weight: bold;
+}
 
