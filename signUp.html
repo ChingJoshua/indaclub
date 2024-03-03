@@ -17,33 +17,6 @@
 
 <body style="background-color: #080705; ">
 
-<?php
-error_reporting(0);
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "indaclub-db";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-} 
-
-$name =  $_REQUEST["firstname"].=$_REQUEST["lastname"];
-$email = $_REQUEST["email"];
-$password = $_REQUEST["password"];
-$sql = "INSERT INTO student (STUDENT_EMAIL, STUDENT_NAME, STUDENT_PASSWORD) 
-VALUES ('$email', '$name', '$password')";
-
-if (mysqli_query($conn, $sql)){
-} else
-    {
-        echo "problem";
-    }
-mysqli_close($conn);
-?>
     <div class="signUp">
         <img src="assets/gee-gee.png" alt="GG logo" class="logo" style="width: 187px; height: 142px; flex-shrink: 0;margin-top: 50px;">
         <hr style="background-color: white; width: 250px; margin-top: 40px; width: 280px; height: 2px; ">
