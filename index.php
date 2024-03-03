@@ -17,13 +17,36 @@
 	</title>
 </head>
 <body>
-    <div style="display: flex; justify-content: center; margin: 0px; padding: 0px;"><img src="assets/splash-geegees-logo 1.png" class="loginLogo"></div>
+    <?php
+    $servername = "localhost";
+    $username = "username";
+    $password = "password";
+
+    // Create connection
+    $conn = mysqli_connect($servername, $username, $password);
+    // Check connection
+    if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+    }
+
+    // Create database
+    $sql = "CREATE DATABASE myDB";
+    if (mysqli_query($conn, $sql)) {
+    echo "Database created successfully";
+    } else {
+    echo "Error creating database: " . mysqli_error($conn);
+    }
+
+    mysqli_close($conn);
+    ?>
+
+    <div style="display: flex; justify-content: center; margin: 0px; padding: 0px;"><img src="assets/gee-gee.png" class="loginLogo"></div>
     <hr style="background-color: white; width: 250px; margin-top: 40px; width: 280px; height: 2px; ">
     <h1 class="landingHeading">the struggle.</h1>
     <p class="landingText">Looking to enhance your<br>school experience?<br><br>We’re here to help.</p>
     <!--Buttons below-->
-    <div style="display: flex; justify-content: center; margin: 0px; padding: 0px; margin-top: 30px;"><a href="#" style="text-decoration: none; color: black"><button type="button" class="btn btn-primary btn-lg login">Login</button></a></div>
-    <div style="display: flex; justify-content: center; margin: 0px; padding: 0px;margin-top: 30px;"><a href="#" style="text-decoration: none; color: white"><button type="button" class="btn btn-secondary btn-lg signup" href="#">Sign Up</button></a></div>
+    <div style="display: flex; justify-content: center; margin: 0px; padding: 0px; margin-top: 30px;"><a href="login.html" style="text-decoration: none; color: black"><button type="button" class="btn btn-primary btn-lg login">Login</button></a></div>
+    <div style="display: flex; justify-content: center; margin: 0px; padding: 0px;margin-top: 30px;"><a href="signUp.html" style="text-decoration: none; color: white"><button type="button" class="btn btn-secondary btn-lg signup" href="#">Sign Up</button></a></div>
     
 
 

@@ -1,0 +1,44 @@
+h1{
+    font-weight: bold;
+}
+
+.signUp {
+    text-align: center;
+    color: white;
+
+}
+.login {
+    text-align: center;
+    color: white;
+
+}
+
+
+.passwordbox{
+    padding-bottom: 10px;
+}
+
+.loginButton{
+    border-radius: 205px;
+    color: black;
+    background: white;
+    border-color: white;
+    border-width: 2px;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.signup {
+    border-radius: 250px;
+    color: white;
+    background: rgb(67, 66, 66);
+    border-color: white;
+    border-width: 2px;
+    font-size: 25px;
+    padding-left: 31px;
+    padding-right: 31px;
+    text-align: center;
+    font-weight: bold;
+}
