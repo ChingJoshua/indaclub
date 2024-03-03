@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>student</title>
+    <style>
+        .header-nav {
+            margin-bottom: 20px;
+        }
+        .header-nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-nav">
+    <a href="/studygroups/all">Feed</a>
+    <a th:href="@{/students/{id}(id=${session.userId})}">Profile</a>
+    <a href="/studygroups/new">Create Groups</a>
+    <!-- Sign Out Button -->
+    <form action="/signout" method="post" style="display: inline;">
+        <input type="submit" value="Sign Out" />
+    </form>
+</div>
+
+    <h1>Student Details</h1>
+    <div>
+        <p>Name: <span th:text="${student.name}"></span></p>
+        <p>Email: <span th:text="${student.email}"></span></p>
+        <p>Study Groups:</p>
+        <ul>
+            <li th:each="group : ${student.studyGroups}" th:text="${group.name}"></li>
+        </ul>
+  <p>Study Groups (Owner):</p>
+        <ul>
+            <li th:each="group : ${student.ownedStudyGroups}" th:text="${group.name}"></li>
+        </ul>
+        
+        
+    </div>
+</body>
+</html>
