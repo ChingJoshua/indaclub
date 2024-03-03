@@ -12,7 +12,7 @@ USE `mydb` ;
 -- Table `mydb`.`student`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`student` (
-  `STUDENT_ID` INT NOT NULL  AUTO_INCREMENT,
+  `STUDENT_ID` INT NOT NULL ,
   `STUDENT_EMAIL` VARCHAR(50) NOT NULL,
   `STUDENT_PASSWORD` VARCHAR(50) NOT NULL,
   `STUDENT_NAME` VARCHAR(50) NOT NULL,
@@ -24,7 +24,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`course`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`course` (
-  `COURSE_ID` INT NOT NULL  AUTO_INCREMENT,
+  `COURSE_ID` INT NOT NULL ,
   `COURSE_NAME` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`COURSE_ID`))
 ENGINE = InnoDB;
@@ -34,7 +34,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`studygroup`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`studygroup` (
-  `SG_ID` INT NOT NULL AUTO_INCREMENT,
+  `SG_ID` INT NOT NULL,
   `SG_NAME` VARCHAR(50) NOT NULL,
   `SG_WEEKDAY` VARCHAR(50) NOT NULL,
   `SG_TIME` VARCHAR(50) NOT NULL,
