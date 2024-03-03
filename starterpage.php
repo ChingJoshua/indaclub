@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style_Mary.css"
 </head>
 <body>
-<div class= = "box-area">
+<div class= "box-area">
 
     <header>
         <div class = "wrapper">

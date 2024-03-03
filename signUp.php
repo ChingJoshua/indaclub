@@ -42,7 +42,7 @@ if (mysqli_query($conn, $sql)){
 } else
     {
         echo "problem";
-    };
+    }
 mysqli_close($conn);
 ?>
     <div class="signUp">
