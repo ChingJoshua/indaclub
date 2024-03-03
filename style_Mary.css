@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap')
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.markazi-text-font {
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body{
+  font-family: "Markazi-Text", serif;
+  text-align: center;
+}
+
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+}
+ header{
+  width: 100%;
+  height: 100px;
+  background: #8F001A;
+  position: fixed;
+ }
+
+ .logo{
+  width: 40%;
+  float: left;
+  text-align: left ;
+  line-height: 100px;
+ }
+
+ .logo a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family:'Arial';
+  color: white;
+  letter-spacing: 4px
+ }
+
+ nav{
+  float: right;
+  line-height: 100px;
+
+ }
+
+ nav a{
+  text-decoration: none;
+  font-family: 'Arial';
+  letter-spacing: 4px;
+  font-size: 20px;
+  color: white;
+  padding: 36px 10px;
+  margin: 0 1px;
+  font-weight:500px;
+
+ }
+
+ nav a:hover{
+  background:white;
+  color: black;
+
+ }
+
+ .banner-area{
+  color: red;
+  background-size: cover;
+  background-position: center center;
+  top: 10px;
+  height: 10vh;
+
+ }
+
+ .content-area{
+  font-size: 25px;
+  color: black;
+ }
+
+
+
+ .column {
+  float: left;
+  width: 100%;
+  height: 100%;
+  }
+
+  .row:after {
+
+  content: "";
+  display: table;
+  clear: both;
+  }
+
+  .makeagroup{
+    border-radius: 205px;
+    color: black;
+    background: white;
+    border-color: white;
+    border-width: 3px;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top:3px;
+    text-align: center;
+    padding-bottom:6px;
+    font-weight: bold;
+
+  }
+
+  .activegroups {
+    border-radius: 250px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border-color: white;
+    border-width: 3px;
+    font-size: 25px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top:3px;
+    padding-bottom:6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.newclass{
+  border-radius: 250px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border-color: white;
+    border-width: 3px;
+    font-size: 10px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top:3px;
+    padding-bottom:6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.wrapper2{
+      text-align: left;
+
+}
+
+.nav input[type=text] {
+  float: right;
+  border-radius: 20px;
+  padding: 3px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.update {
+  border-radius: 250px;
+  color: black;
+  background: rgb(255, 255, 255);
+  border-color: #8F001A;
+  border-width: 5px;
+  font-size: 10px;
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-top:4px;
+  padding-bottom:6px;
+  font-weight: bold;
+  
+}
+
+footer {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom:0.5px;
+  background-color: #8F001A;
+  color: white;
+}
