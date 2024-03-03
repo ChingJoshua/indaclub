@@ -38,9 +38,12 @@ $password = $_REQUEST['password'];
 $sql = "INSERT INTO student (STUDENT_EMAIL, STUDENT_NAME, STUDENT_PASSWORD) 
 VALUES ('$email', '$name', '$password')";
 
-if ($email && $name && $password){
-    mysqli_query($conn, $sql);
-}
+if (mysqli_query($conn, $sql)){
+    
+} else
+    {
+        echo "problem";
+    };
 
 
 mysqli_close($conn);
