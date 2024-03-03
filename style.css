@@ -131,3 +131,22 @@ body{
     font-weight: bold;
 }
 
+.newclass{
+  border-radius: 250px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border-color: white;
+    border-width: 3px;
+    font-size: 10px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top:3px;
+    padding-bottom:6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.wrapper2{
+      text-align: left;
+
+}
