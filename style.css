@@ -150,3 +150,12 @@ body{
       text-align: left;
 
 }
+
+.nav input[type=text] {
+  float: right;
+  border-radius: 20px;
+  padding: 3px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
