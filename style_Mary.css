@@ -82,7 +82,7 @@ body{
 
  .content-area{
   font-size: 25px;
-  color: #8F001A;
+  color: black;
  }
 
 
@@ -109,20 +109,77 @@ body{
     font-size: 25px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top:3px;
     text-align: center;
+    padding-bottom:6px;
     font-weight: bold;
 
   }
 
   .activegroups {
-    border-radius: 205px;
-    color: black;
-    background: white;
+    border-radius: 250px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     border-color: white;
     border-width: 3px;
     font-size: 25px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top:3px;
+    padding-bottom:6px;
     text-align: center;
     font-weight: bold;
+}
 
+.newclass{
+  border-radius: 250px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border-color: white;
+    border-width: 3px;
+    font-size: 10px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top:3px;
+    padding-bottom:6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.wrapper2{
+      text-align: left;
+
+}
+
+.nav input[type=text] {
+  float: right;
+  border-radius: 20px;
+  padding: 3px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.update {
+  border-radius: 250px;
+  color: black;
+  background: rgb(255, 255, 255);
+  border-color: #8F001A;
+  border-width: 5px;
+  font-size: 10px;
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-top:4px;
+  padding-bottom:6px;
+  font-weight: bold;
+  
+}
+
+footer {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom:0.5px;
+  background-color: #8F001A;
+  color: white;
+}
